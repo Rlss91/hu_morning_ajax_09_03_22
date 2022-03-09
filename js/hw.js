@@ -30,6 +30,7 @@ $(document).ready(() => {
   $("#editpopup-edit").click(() => {
     let newName = $("#edittxt").val();
     selectedItem.innerText = newName;
+    animalsArr[selectedItem.id.replace("animal_", "")] = newName;
   });
   $("#editpopup-remove").click(() => {
     console.log(selectedItem.id);
